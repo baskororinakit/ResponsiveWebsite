@@ -1,0 +1,13 @@
+9/1/2025
+kesalahan di "nav ul .hidden"
+malah jadi .navbar bukan nav
+
+13/1/2025
+penambahan bootstrap
+penambahan card
+penambahan fitur smooth scroll navbar ketika dipencet
+
+- kekurangan
+    belum responsive di beberapa device
+    belum berfungsi beberapa navbar items
+

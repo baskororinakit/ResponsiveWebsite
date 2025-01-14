@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+  margin-top: 0;
+}
+
+.logo img {
+  width: 60px;
+  border-radius: 70%;
+}
+
+.menu-icon {
+  color: black;
+  font-size: 24px;
+  display: none;
+}
+nav ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s ease, font-size 0.3s ease;
+}
+
+.a-navbar {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 450;
+  transition: all ease-in-out 0.3s;
+}
+
+.a-navbar:hover {
+  color: #7e74f1;
+  transition: all ease-in-out;
+  transform: scale(1);
+  font-size: 18px;
+}
+
+.list-group {
+  margin: 20px;
+}
+
+/* Hero Section */
+#hero {
+  /* height: 720px; */
+  display: grid;
+  flex-direction: row;
+  row-gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 14rem;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+
+.hero-name span {
+  color: #7e74f1;
+}
+
+/* .hero-right img {
+  width: 90%;
+} */
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+.pre-title:before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+}
+
+/* Device Section */
+#device {
+  background-color: #fbfbfb;
+  padding: 6rem 0;
+}
+
+.device-pre-title {
+  margin: 0 auto; 
+} 
+
+.card-devices {
+  padding-top: 3rem;
+}
+
+.custom-spacing {
+  margin-bottom: 5rem;
+}
+
+
+/* Media Query Tablet Dan Mobile */
+@media only screen and (max-width: 1190px) {
+  nav {
+    padding: 12px 32px;
+    /* position: absolute; */
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    /* font-size: 24px; */
+  }
+
+  .logo img {
+    width: 45px;
+  }
+
+  main {
+    top: 0;
+  }
+
+  /* Hero Section */
+  #hero {
+    justify-content: center;
+    display: grid;
+    grid-template-areas:
+      "hero-right"
+      "hero-left";
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .hero-left {
+    grid-area: hero-left; /* Pastikan sesuai grid-area */
+    display: flex;        /* Gunakan flexbox untuk alignment */
+    flex-direction: column; /* Agar elemen vertikal */
+    justify-content: center; /* Pusatkan secara vertikal */
+    align-items: center;  /* Pusatkan secara horizontal */
+    text-align: center;   /* Agar teks dalam elemen rata tengah */
+    margin: 0 auto;       /* Pastikan tidak ada margin yang mengganggu */
+  }
+
+  .hero-left h3,
+  .hero-left h1,
+  .hero-left p {
+    margin: 10px 0; /* Tambahkan sedikit jarak antar elemen */
+  }
+
+  .hero-left h3 {
+    padding-right: 2.5rem;
+  }
+
+  .hero-right {
+    grid-area: hero-right;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-right img {
+    max-width: 100%; /* Agar gambar responsif */
+    height: auto;
+  }
+}
