@@ -190,7 +190,7 @@ p {
   .hero-left h3,
   .hero-left h1,
   .hero-left p {
-    margin: 10px 0; /* Tambahkan sedikit jarak antar elemen */
+    margin: 3 0; /* Tambahkan sedikit jarak antar elemen */
   }
 
   .hero-left h3 {
