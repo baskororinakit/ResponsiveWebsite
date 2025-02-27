@@ -1,2 +1,2 @@
-# Responsive Navbar
-Making Responsive Navbar with css html and javascript
+# Responsive Website
+Making Responsive Website with css html and javascript
